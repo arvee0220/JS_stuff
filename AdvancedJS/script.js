@@ -60,5 +60,37 @@ compose(sum, sum)(5); // 7
 		* Avoiding Side Effects = always produces the same results given the same inputs
 		* functional purity/deterministic = It does not depend on any state, or data, change during a program’s execution. It must only depend on its input elements.
 */
-// Deterministic
+
+
+// Advanced Arrays
+const array = [1, 2, 10, 16];
+
+const double = [];
+
+const newArray = array.forEach(element => {
+	double.push(element * 2);
+	console.log('element',element);
+});
+
+console.log('forEach', double);
+
+// map, filter, reduce
+
+// map
+const mapArray = array.map(num => num * 2)
+
+console.log('map', mapArray); // 2, 4, 20, 32
+
+// filter
+const filterArray = array.filter(num => num > 5
+);
+
+console.log('filter', filterArray);
+
+// reduce
+const reduceArray = array.reduce((accumulator, num) => {
+	console.log('accumulator', accumulator)
+	console.log('num', num)
+	return accumulator + num
+}, 0);
 
