@@ -27,6 +27,8 @@ const first = () => {
 const newFunc = first();
 newFunc();
 
+// Advanced function
+
 /* Closures - a function ran. The  function executed. It's never going to execute again. BUT it's going to remember that there are references to those variables so that child scope always has access to the parent scope. */
 
 // Currying = process of converting a function that takes  multiple arguments into a function that takes them one at a time.

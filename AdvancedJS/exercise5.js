@@ -37,7 +37,7 @@ const feMethod = array.forEach((property) => {
 console.log('forEach', userNameArray);
 
 //Create an array using map that has all the usernames with a "? to each of the usernames
-const mapMethod = array.map(objNames => objNames.username + "?")
+const mapMethod = array.map(objNames => objNames.username + "?");
 
 console.log('mapMethod', mapMethod);
 
@@ -57,9 +57,9 @@ console.log('reduce', reduceMethod);
 // (2), Make this map function pure:
 const arrayNum = [1, 2, 4, 5, 8, 9];
 
-const newArray = arrayNum.map((num) => num * 2);
+const newArray = arrayNum.map((num, i) => num * 2);
 
-console.log(newArray)
+console.log('newArray', newArray)
 
 //BONUS: create a new list with all user information, but add "!" to the end of each items they own.
 const newObjArray = array.map(objProp => {
@@ -78,3 +78,10 @@ Then, the items property is modified using the map() method to add "!" to the en
 
 So, the code is essentially creating a new object with all the properties of the original object, except for the items property which is being modified.
 */
+
+const answer = array.map(user => {
+	user.items = user.items.map(item => item + "!");
+	return user;
+})
+
+console.log('answer', answer);
