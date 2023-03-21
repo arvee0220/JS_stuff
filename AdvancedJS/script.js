@@ -95,4 +95,3 @@ const reduceArray = array.reduce((accumulator, num) => {
 	console.log('num', num)
 	return accumulator + num
 }, 0);
-
