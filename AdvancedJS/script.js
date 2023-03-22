@@ -71,7 +71,7 @@ const double = [];
 
 const newArray = array.forEach(element => {
 	double.push(element * 2);
-	console.log('element',element);
+	console.log('element', element);
 });
 
 console.log('forEach', double);
