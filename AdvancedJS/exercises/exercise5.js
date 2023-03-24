@@ -47,8 +47,8 @@ const filterMethod = array.filter(objProp => objProp.team === "red").map(objProp
 console.log('filterMethod', filterMethod)
 
 //Find out the total score of all users using reduce
-const reduceMethod = array.reduce((acc, i) => {
-  return acc + i.score;
+const reduceMethod = array.reduce((accumulator, i) => {
+  return accumulator + i.score;
 }, 0);
 
 console.log('reduce', reduceMethod);

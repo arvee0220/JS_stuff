@@ -45,7 +45,7 @@ let objct1 = {
 let cloneX = Object.assign({}, objct1);
 let cloneY = {...objct1};
 
-// Deep clone
+// Deep clone (will clone the original value of the object)
 let superClone = JSON.parse(JSON.stringify(objct1));
 
 objct1.c.deep = 'Hahaha';

@@ -1,7 +1,7 @@
 var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
-var items = ul.querySelector("li");
+var items = document.querySelector("li");
 var deleteBtn = document.getElementsByClassName("delete");
 
 
@@ -52,9 +52,12 @@ const createListElement = () => {
 	li.appendChild(document.createTextNode(input.value));
 	li.innerHTML = li.innerHTML + " ";
 	li.appendChild(deleteButton);
-
+	li.setAttribute("onclick", "btnClick()")
+	li.classList.add("task");
 	ul.appendChild(li);
 	input.value = "";
+	
+	btnClick();
 }
 
 const addListAfterClick = () => {
