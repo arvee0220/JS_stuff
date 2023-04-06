@@ -50,3 +50,12 @@ Promise.all(urls.map(url => {
 		console.log(result[1])
 		console.log(result[2])
 	}).catch(() => console.log('error'))
+
+// ES2020
+const promiseOne = new Promise((resolve, reject) => setTimeout(resolve, 3000));
+const promiseTwo = new Promise((resolve, reject) => setTimeout(reject, 3000));
+
+Promise.all([promiseOne, promiseTwo]).then(data => console.log(data)).catch(error => console.log("something failed", error));
+
+// allSettled
+Promise.allSettled([promiseOne, promiseTwo]).then(data => console.log(data)).catch(error => console.log("something failed", error));
