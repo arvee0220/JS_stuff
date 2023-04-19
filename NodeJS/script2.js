@@ -1,7 +1,2 @@
-const largeNumber = 356;
-const smallNumber = 10;
-
-module.exports = {
-    largeNumber: largeNumber,
-    smallNumber: smallNumber,
-};
+export const largeNumber = 356;
+export const smallNumber = 10;
