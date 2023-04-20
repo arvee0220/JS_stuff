@@ -21,7 +21,7 @@ console.log("readFileSync", file.toString());
 }); */
 
 // Write
-fs.writeFile("bye.txt", "Sad to see you go", (error) => {
+fs.writeFile("./bye.txt", "Sad to see you go", (error) => {
     if (error) {
         console.log(error);
     }
