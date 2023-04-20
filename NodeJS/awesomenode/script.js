@@ -34,3 +34,6 @@ fs.unlink("./bye.txt", (error) => {
     }
     console.log("inception");
 });
+
+/* console.time()
+console.timeEnd() => measures the length of time it takes for a function to complete. */
